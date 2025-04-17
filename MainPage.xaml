@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="squispeS2T2.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label Text="Estudiante:" FontAttributes="Bold"/>
+                <Picker x:Name="Estudiantes">
+                    <Picker.Items>
+                        <x:String>Salomé Quispe</x:String>
+                        <x:String>Soledad Quispe</x:String>
+                        <x:String>Miryam Silva</x:String>
+                        <x:String>Joselyn Correa</x:String>
+                        <x:String>Andy Loor</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Nota Seguimiento 1:"/>
+    
+                <Entry x:Name="seguimiento1" 
+                       Keyboard="Numeric"
+                       MaxLength="4"/>
+    
+                <Label Text="Examen 1:"/>
+    
+                <Entry x:Name="examen1"
+                       Keyboard="Numeric"
+                       MaxLength="4"/>
+
+                <Label Text="Nota Seguimiento 2:"/>
+    
+                <Entry x:Name="seguimiento2"
+                       Keyboard="Numeric"
+                       MaxLength="4"/>
+    
+                <Label Text="Examen 2:"/>
+    
+                <Entry x:Name="examen2"
+                       Keyboard="Numeric"
+                       MaxLength="4"/>
+
+                <Label Text="Fecha:"/>
+    
+                <DatePicker x:Name="fechaSelect"/>
+
+                <Button Text="Calcular Notas" Clicked="Button_Clicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
